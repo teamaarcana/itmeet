@@ -1,0 +1,19 @@
+default: &default
+      adapter: postgresql
+      encoding: unicode
+      pool: 5
+      username: aarcana
+      password: teamaarcana
+      host:     <%= ENV['IP'] %>
+
+development:
+  <<: *default
+  database: itmeet_development
+
+test:
+  <<: *default
+  database: itmeet_test
+
+production:
+  <<: *default
+  database: itmeet_production
