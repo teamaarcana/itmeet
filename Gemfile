@@ -11,6 +11,8 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem "font-awesome-rails"
 #Jquery
 gem 'jquery-rails'
+#For Admin
+gem 'activeadmin'
 #For user authentication
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
