@@ -13,6 +13,8 @@ gem "font-awesome-rails"
 gem 'jquery-rails'
 #For Admin
 gem 'activeadmin'
+#For photos
+gem 'carrierwave'
 #For user authentication
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
