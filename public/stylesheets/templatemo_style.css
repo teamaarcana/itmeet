@@ -43,7 +43,7 @@ ul {
 .templatemo-blue-text { color: #0db5c0; }
 .templatemo-red-text { color: #fe475b; }
 .templatemo-light-gray-text { color: #9b9b9b; }
-.templatemo-dark-gray-text { color: #535353; }
+.templatemo-dark-gray-text { color: #535353; text-transform: none;}
 .templatemo-gradient-bg {
   background-image: url('../images/gradient-border-top.png'), url('../images/gradient-border-bottom.png');
   background-position: center top, center bottom;
@@ -63,7 +63,10 @@ ul {
 .templatemo-home-right,
 .templatemo-about-left,
 .templatemo-services {
-  padding: 60px 80px;
+  padding: 90px 80px;
+}
+.templatemo-about-left .templatemo-blue-text {
+  padding-bottom: 10px;
 }
 
 /* 2. Menu Styles
@@ -181,16 +184,20 @@ a#mobile_menu {
   top: 110px;
   left: 25px;
 }
+.templatemo-site-name {
+  padding-top: 25px;
+  text-transform: none;
+}
 .templatemo-site-name, .templatemo-slogan {
 	display: block;
-	text-transform: uppercase;
 }
+.templatemo-slogan {  text-transform: uppercase; }
 .templatemo-site-name {	font-size: 80px; }
 .templatemo-slogan {
   color: #8e8e8e;
   font-size: 18px;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   padding-left: 15px;
 }
 .templatemo-home-text { margin-bottom: 20px; }
@@ -210,6 +217,11 @@ a#mobile_menu {
 .templatemo-about-right {
   padding-left: 80px;
   padding-top: 70px;
+}
+.templatemo-about-right .about {
+  padding-top: 20px;
+  height: 360px;
+  width: 580px;
 }
 .templatemo-about-list {
   line-height: 2;
@@ -359,10 +371,11 @@ footer .col-lg-12 { padding: 0; }
   }
   .templatemo-home-right { padding: 40px; }
   .templatemo-home-text { margin-bottom: 10px; }
-  .templatemo-site-name { font-size: 80px; }
+  .templatemo-site-name { font-size: 60px;padding-top: 25px;}
   .templatemo-slogan {
-    letter-spacing: 6px;
+    letter-spacing: 4.5px;
     padding-left: 10px;
+    font-size: 15px;
   }
   .templatemo-about-left,
   .templatemo-products-left,
@@ -372,6 +385,11 @@ footer .col-lg-12 { padding: 0; }
   .templatemo-about-right {
     padding-left: 30px;
     padding-top: 80px;
+  }
+  .templatemo-about-right .about {
+    padding-top: 30px;
+    height: 290px;
+    width: 380px;
   }
   .templatemo-products-left,
   .templatemo-products-right {
@@ -406,6 +424,7 @@ footer .col-lg-12 { padding: 0; }
 }
 
 @media screen and (max-width: 767px) {
+  h1 { font-size: 40px;}
   h2 { margin-top: 20px; }
   .templatemo-nav-container { position: static; }
   .templatemo-nav-container .container { height: 60px; }
