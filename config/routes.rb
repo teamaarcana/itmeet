@@ -6,4 +6,5 @@ Rails.application.routes.draw do
        resources :donates
      end
    end
+   resources :updates
 end
