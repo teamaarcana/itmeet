@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20180104051606) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -28,6 +29,7 @@ ActiveRecord::Schema.define(version: 20180104051606) do
     t.index ["namespace"], name: "index_active_admin_comments_on_namespace"
     t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
   end
+
 
   create_table "donates", force: :cascade do |t|
     t.string "title"
