@@ -1,7 +1,7 @@
 (function($) {
 
 	"use strict";
-	
+
 	  // Cache selectors
     var lastId,
     topMenu = $(".menu-holder"),
@@ -11,9 +11,9 @@
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function(){
       var item = $($(this).attr("href"));
-      
-      if (item.length) { 
-         return item; 
+
+      if (item.length) {
+         return item;
       }
     });
 
@@ -26,29 +26,29 @@
     menuItems.click(function(e){
       var href = $(this).attr("href");
       var offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
-      
-      $('html, body').stop().animate({ 
+
+      $('html, body').stop().animate({
           scrollTop: offsetTop
       }, 300);
-      
+
       e.preventDefault();
     });
-	  
+
     // Bind to scroll
     $(window).scroll(function(){
       // Get container scroll position
       var fromTop = $(this).scrollTop()+topMenuHeight;
-       
+
       // Get id of current scroll item
       var cur = scrollItems.map(function(){
         if ($(this).offset().top < fromTop)
           return this;
       });
-      
+
       // Get the id of the current element
       cur = cur[cur.length-1];
       var id = cur && cur.length ? cur[0].id : "";
-       
+
       if (lastId !== id && id != "") {
         lastId = id;
         // Set/remove active class
@@ -61,11 +61,11 @@
       -------------------------------------- */
       if($(window).width() > 767) {
         if ($(this).scrollTop() > 100){
-          $('.templatemo-nav-container').addClass("sticky");        
+          $('.templatemo-nav-container').addClass("sticky");
         }
         else {
           $('.templatemo-nav-container').removeClass("sticky");
-        }  
+        }
       } else {
         $('.templatemo-nav-container').removeClass("sticky");
       }
@@ -83,11 +83,11 @@
           $("#responsive-menu").css({"right":-1500});
 
           if ($(window).scrollTop() > 100){
-            $('.templatemo-nav-container').addClass("sticky");        
+            $('.templatemo-nav-container').addClass("sticky");
           }
           else {
             $('.templatemo-nav-container').removeClass("sticky");
-          } 
+          }
         }
         else {
           $('.templatemo-nav-container').removeClass("sticky");
@@ -108,16 +108,16 @@ var center;
 function initialize() {
     var mapOptions = {
       zoom: 16,
-      center: new google.maps.LatLng(13.756494, 100.565066),
+      center: new google.maps.LatLng(27.7089559,85.2911131),
       scrollwheel: false
     };
-  
+
     map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
 
     google.maps.event.addDomListener(map, 'idle', function() {
         calculateCenter();
     });
-  
+
     google.maps.event.addDomListener(window, 'resize', function() {
         map.setCenter(center);
     });
@@ -134,17 +134,17 @@ function loadGoogleMap(){
     document.body.appendChild(script);
 }
 
-/* HTML document is loaded 
+/* HTML document is loaded
 ----------------------------------*/
 $(document).ready(function(){
 
   if($(window).width() > 767) {
     if ($(window).scrollTop() > 100){
-      $('.templatemo-nav-container').addClass("sticky");        
+      $('.templatemo-nav-container').addClass("sticky");
     }
     else {
       $('.templatemo-nav-container').removeClass("sticky");
-    }    
+    }
   }
 
   /* Map */
