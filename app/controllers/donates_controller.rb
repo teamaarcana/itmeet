@@ -29,7 +29,8 @@ class DonatesController < ApplicationController
   def show
       @donates = Donate.find(params[:id])
   end
+  private
   def donate_params
-    params.permit(:title, :product, :quantity, :option)
+    params.require(:donate).permit(:title, :product, :quantity, :option)
   end
 end

@@ -10,7 +10,6 @@ class DonatesController < ApplicationController
   def edit
        @donates = Donate.find(params[:id])
   end
-
   def update
     @donates = Donate.find(params[:id])
     @donates.update(donate_params)
@@ -30,6 +29,6 @@ class DonatesController < ApplicationController
       @donates = Donate.find(params[:id])
   end
   def donate_params
-    params.permit(:title, :product, :quantity, :option)
+    params.require(:donate).permit(:title, :product, :quantity, :option)
   end
 end

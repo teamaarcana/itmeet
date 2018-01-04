@@ -14,6 +14,7 @@ gem 'jquery-rails'
 #For Admin
 gem 'activeadmin'
 #For photos
+gem 'pry'
 gem 'carrierwave'
 #For user authentication
 gem 'devise'

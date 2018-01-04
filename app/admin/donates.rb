@@ -12,4 +12,6 @@ ActiveAdmin.register Donate do
 #   permitted
 # end
 
+permit_params :title, :product, :quantity, :option
+
 end
