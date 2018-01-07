@@ -6,5 +6,6 @@ Rails.application.routes.draw do
        resources :donates
      end
    end
+   root "updates#index"
    resources :updates
 end

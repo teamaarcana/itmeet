@@ -8,16 +8,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <div id = "wrap">
+  <body class="templatemo-black-bg">
+
         <%= render 'shared/nav' %>
-
-        <div class = "container">
-          <%= yield %>
-        </div>
-    </div><!-- wrap -->
-
-    <%= render 'shared/footer' %>
+        <%= yield %>
+        <%= render 'shared/footer' %>
 
   </body>
 </html>
