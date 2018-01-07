@@ -1,0 +1,143 @@
+<section id="home">
+  <div class="container">
+    <div class="row">
+      <div class="templatemo-home-left col-lg-4 col-md-5 col-sm-5 templatemo-white-bg">
+        <div class="templatemo-logo">
+          <h1 class="templatemo-site-name templatemo-blue-text">DonEx</h1>
+          <span class="templatemo-slogan">Play Your Part</span>
+        </div>
+        <img src="images/black-curve.png" alt="Black Curve" class="templatemo-logo-bg">
+      </div>
+      <div class="templatemo-home-right col-lg-8 col-md-7 col-sm-7 templatemo-white-bg templatemo-gradient-bg">
+        <h2 class="templatemo-dark-gray-text"><b>Don</b>ate <b>Ex</b>press</h2>
+        <h3 class="templatemo-dark-gray-text">Sustainable Donation For Change</h3>
+        <!-- <p class="templatemo-home-text templatemo-light-gray-text"><em>Ion Template is free responsive Bootstrap (v3.2.0) layout from templatemo. Credit goes to <a rel="nofollow" href="http://www.smashingmagazine.com/2012/11/20/art-professions-icons-png/" target="_parent">Art Professions</a> icons used in this template. Donec et quam massa. Ut dui lectus, rhoncus vel aliquam et, tincidunt a sem. Aliquam sed feugiat turpis.</em></p> -->
+        <a href="#about" class="text-uppercase templatemo-learn-more templatemo-blue-text">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <div class="container templatemo-white-bg">
+    <div class="row">
+      <div class="templatemo-about-left col-lg-5 col-md-5 col-sm-5">
+        <h2 class="templatemo-blue-text">About Us</h2>
+        <p class="templatemo-light-gray-text"> Our initiative is to help the people who are in crisis of the resources and to motivate the people to donate resources which can be reused like books, clothes and also to motivate people to volunteer themselves in the events like blood donation, sanitation programs, event management etc. </p>
+        <ul class="templatemo-light-gray-text templatemo-about-list">
+          <li>Platform</li>
+          <li>Sustainability</li>
+          <li>Reuse of resource</li>
+          <li>Reward points</li>
+          <li>Help each other</li>
+        </ul>
+      </div>
+      <div class="col-lg-7 col-md-7 col-sm-7 templatemo-about-right">
+        <img src="images/about.png" alt="Smart Phone" class="about">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="products">
+  <div class="container">
+    <div class="row">
+      <div class="templatemo-products-left col-lg-7 col-md-7 col-sm-7 templatemo-white-bg templatemo-gradient-bg">
+        <h2 class="templatemo-red-text">Application</h2>
+        <h3>Reviews</h3>
+        <p class="templatemo-light-gray-text"><em>
+Our project is a platform which supports in sustainability of social and environmental aspects of SDGs. Our initiative is to help the people who are in crisis of the resources and to motivate the people to donate resources which can be reused like books, clothes and also to motivate people to volunteer themselves in the events like blood donation, sanitation programs, event management etc. Due to this, the needy gets the resources they require and the donors also get the reward points that can be used to redeem discount in different shops.					</p>
+
+      </div>
+      <div class="templatemo-products-right col-lg-5 col-md-5 col-sm-5 templatemo-white-bg">
+        <a href="#" class="templatemo-products-link text-uppercase">
+          <span class="first">Download</span>
+          <span class="second">App Now</span>
+        </a>
+        <img src="images/red-button.jpg" alt="Red Button" class="templatemo-red-btn pull-right">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="services">
+  <div class="container templatemo-white-bg text-center">
+    <div class="row templatemo-services">
+      <h2 class="templatemo-blue-text">Latest News</h2>
+      <h3>We believe on donation for change</h3>
+      <% @updates.each do |u| %>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <% image_tag u.image %>
+          <h4><em><%= u.title %></em></h4>
+          <p class="templatemo-light-gray-text"><em><%= truncate(u.description, :length => 200) %><%= link_to "read more", update_path(u)%></em></p>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+</section>
+<section id="testimonials">
+  <div class="container templatemo-white-bg">
+    <div class="row">
+      <div class="templatemo-testimonials-left col-lg-5 col-md-5 col-sm-5">
+        <h2 class="templatemo-testimonials-header text-center">
+          <span class="first">Voices</span>
+          <span class="second">from Donors</span>
+        </h2>
+        <img src="images/blue-button.jpg" alt="Blue Button" class="templatemo-blue-btn">
+      </div>
+      <div class="templatemo-testimonials-right templatemo-gradient-bg col-lg-7 col-md-7 col-sm-7">
+        <div class="slider">
+          <div class="flexslider">
+            <ul class="slides templatemo-light-gray-text text-center templatemo-em">
+              <li>
+                  <p class="templatemo-testimonial-name">Elizabeth Andrew</p>
+                  <p><i class="fa fa-quote-left"></i>"Volunteers do not necessarily have the time; they just have the heart."<i class="fa fa-quote-right"></i></p>
+              </li>
+              <li>
+                  <p class="templatemo-testimonial-name">Ranjan</p>
+                  <p><i class="fa fa-quote-left"></i>Morbi pulvinar eleifend ante eget suscipit. Ut posuere nibh id lacus blandit, ac hendrerit turpis rhoncus. Sed felis justo, finibus id metus nec, ultricies pretium est. Nullam vel ex cursus, viverra augue quis, pharetra massa.<i class="fa fa-quote-right"></i></p>
+              </li>
+              <li>
+                  <p class="templatemo-testimonial-name">Sarad</p>
+                  <p><i class="fa fa-quote-left"></i>Pellentesque ultrices nulla sit amet augue aliquet egestas. Nulla erat nulla, maximus at auctor nec, suscipit ut est.<i class="fa fa-quote-right"></i></p>
+              </li>
+              <li>
+                  <p class="templatemo-testimonial-name">Deepak</p>
+                  <p><i class="fa fa-quote-left"></i>Nullam aliquam tellus lorem, rutrum blandit ante tincidunt a. Duis ut ligula aliquam, maximus massa sit amet, finibus odio. Praesent eget lacus in dui consectetur aliquam quis at neque.<i class="fa fa-quote-right"></i></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="container templatemo-white-bg">
+    <div class="row templatemo-contact">
+      <h2 class="templatemo-red-text text-center">Contact</h2>
+      <h3 class="text-center">Want to know more? Contact us for details.</h3>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <form action="mailto:teamaarcana@gmail.com" method="post">
+          <div class="tm-contact-form">
+                    <div class="form-group">
+                        <input name="name" type="text" class="form-control" id="contact_name" placeholder="Name..." />
+                    </div>
+                    <div class="form-group">
+                        <input name="email" type="email" class="form-control" id="contact_email" placeholder="Email..." />
+                    </div>
+                    <div class="form-group">
+                        <input name="subject" type="text" class="form-control" id="contact_subject" placeholder="Subject..." />
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="8" class="form-control" id="contact_message" placeholder="Message..."></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn text-uppercase templatemo-send-btn">Send</button>
+              </form>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div >
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226388.3602890081!2d85.19058234630782!3d27.552635619343963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb143cc669c123%3A0x40d854bf34db9c39!2sLalitpur!5e0!3m2!1sen!2snp!4v1515081359206" width="500" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>					</div>
+      </div>
+    </div>
+  </div>
+</section>
