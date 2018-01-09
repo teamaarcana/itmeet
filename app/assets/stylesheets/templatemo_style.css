@@ -1,8 +1,4 @@
 /*
-
-Ion Template
-http://www.templatemo.com/tm-431-ion
-
 COLOR CODES
   Blue #0db5c0
   Red #fe475b
@@ -130,7 +126,7 @@ a:focus {
   position: fixed;
   z-index: 5500;
   right: -1500px;
-  display: none;
+  //display: none;
   overflow: auto;
 }
 #responsive-menu ul {
@@ -309,7 +305,7 @@ textarea.form-control { padding: 15px; }
   padding: 5px 30px;
 }
 #map-canvas {
-  border-radius: 50px;
+  border-radius: 20px;
   height: 350px;
 }
 footer {
