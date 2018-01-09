@@ -1,16 +1,12 @@
 <section id="home">
-  <div class="container">
-    <div class="row" >
-      <div class="templatemo-home-left col-lg-4 col-md-5 col-sm-5 templatemo-white-bg">
-        <div class="templatemo-logo">
-
-          <h1 class="templatemo-site-name templatemo-blue-text"><%= image_tag @update.image %></h1>
-          <span class="templatemo-slogan"></span>
-        </div>
-          <h1> <span class="templatemo-slogan" style="color:#080808"><%= @update.title %></span><h1 >
+  <div class="container templatemo-white-bg">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 templatemo-about-right">
+        <%= image_tag @update.image %>
       </div>
-      <div class="templatemo-home-right col-lg-8 col-md-7 col-sm-7 templatemo-white-bg templatemo-gradient-bg">
-        <h3 class="templatemo-dark-gray-text"><%= @update.description %></h3>
+      <div class="templatemo-about-left col-lg-8 col-md-8 col-sm-8">
+        <h2 class="templatemo-blue-text"><%= @update.title %></h2>
+        <p class="templatemo-light-gray-text"><%= @update.description %></p>
       </div>
     </div>
   </div>

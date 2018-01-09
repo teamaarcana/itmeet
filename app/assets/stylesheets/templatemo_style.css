@@ -307,6 +307,7 @@ textarea.form-control { padding: 15px; }
 #map-canvas {
   border-radius: 20px;
   height: 350px;
+  width: 500px;
 }
 footer {
   background: url('../images/red-corner.png') no-repeat right;
@@ -321,7 +322,7 @@ footer .col-lg-12 { padding: 0; }
   float: left;
   margin-left: 30px;
 }
-.templatemo-copyright-text a { color: #000; }
+.templatemo-copyright-text a { color: #000;text-decoration: none;}
 .templatemo-copyright-design {
   float: right;
   margin-right: 30px;
@@ -329,6 +330,10 @@ footer .col-lg-12 { padding: 0; }
 .templatemo-copyright-design,
 .templatemo-copyright-design a {
     color: #fff;
+}
+#home .templatemo-white-bg .row {
+  padding-top: 15px;
+  padding-bottom: 100px;
 }
 
 /* 7. Media Queries
@@ -421,6 +426,9 @@ footer .col-lg-12 { padding: 0; }
     left: 21px;
   }
   .templatemo-contact { padding: 30px; }
+  #map-canvas {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -490,5 +498,8 @@ footer .col-lg-12 { padding: 0; }
     float: none;
     margin-top: 0;
     margin-right: 0;
+  }
+  #map-canvas {
+    width: 677px;
   }
 }
