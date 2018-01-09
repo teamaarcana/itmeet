@@ -3,7 +3,7 @@ $secondary-font: 'Dosis', sans-serif;
 $main-blue: #337ab7;
 $footer-height: 50px;
 
-.navbar-default {
+/*.navbar-default {
   font-family: $secondary-font;
 }
 
@@ -33,20 +33,20 @@ html, body {
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html,
+/*html,
 body {
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
-}
+/*}
 
 /* Wrapper for page content to push down footer */
-#wrap {
+/*#wrap {
   min-height: 100%;
   height: auto;
   /* Negative indent footer by its height */
-  margin: 0 auto -$footer-height;
+/*  margin: 0 auto -$footer-height;
   /* Pad bottom by footer height */
-  padding: 0 0 $footer-height;
+/*  padding: 0 0 $footer-height;
 }
 
 
@@ -55,4 +55,4 @@ body {
   background:grey;
   padding:10px;
   color:white;
-}
+}*/
