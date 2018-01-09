@@ -65,7 +65,7 @@
 
       <% @updates.each do |u| %>
         <div class="col-lg-3 col-md-3 col-sm-3">
-          <%= image_tag u.image %>
+          <%= image_tag u.image, style: 'height:140px;width:140px;' %>
           <h4><em><%= u.title %></em></h4>
           <p class="templatemo-light-gray-text"><em><%= truncate(u.description, :length => 200) %><%= link_to "read more", update_path(u)%></em></p>
         </div>
