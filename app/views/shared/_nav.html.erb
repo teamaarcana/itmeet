@@ -12,11 +12,11 @@
     <div class="row">
       <nav class="hidden-xs text-uppercase templatemo-nav">
         <ul class="menu-holder">
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#products">Download</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="active"><li><%= link_to 'Home',root_path(anchor:'home') %> </li>
+          <li><%= link_to 'About',root_path(anchor:'about') %></li>
+          <li><%= link_to 'Download',root_path(anchor:'products') %> </li>
+          <li><%= link_to 'Services',root_path(anchor:'services') %> </li>
+          <li><%= link_to 'Contact',root_path(anchor:'contact') %> </li>
         </ul>
       </nav>
       <div class="text-right visible-xs">
