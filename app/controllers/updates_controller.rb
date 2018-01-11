@@ -1,6 +1,6 @@
 class UpdatesController < ApplicationController
   def index
-   @updates = Update.all
+   @updates = Update.order("created_at DESC").limit(4)
   end
 
   def new
@@ -32,6 +32,9 @@ class UpdatesController < ApplicationController
   end
   def show
     @update = Update.find(params[:id])
+  end
+  def all
+    @updates = Update.all
   end
   private
   def update_params
