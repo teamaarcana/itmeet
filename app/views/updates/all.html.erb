@@ -1,0 +1,16 @@
+
+  <section id="home" style: 'padding-top:0px;'>
+    <div class="container templatemo-white-bg">
+      <div class="row">
+        <% @updates.each do |update| %>
+        <div class="col-lg-4 col-md-4 col-sm-4 templatemo-about-right">
+          <%= image_tag update.image, style: 'height:150px;width:150px;' %>
+        </div>
+        <div class="templatemo-about-left col-lg-8 col-md-8 col-sm-8">
+          <h2 class="templatemo-blue-text"><%= link_to update.title, update_path(update) %></h2>
+          <p class="templatemo-light-gray-text"><%= truncate(update.description, :length => 500) %><%= link_to "read more", update_path(update)%></p>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </section>

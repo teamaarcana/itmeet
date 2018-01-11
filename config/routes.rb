@@ -10,4 +10,5 @@ Rails.application.routes.draw do
    end
    root "updates#index"
    resources :updates
+   get '/all', to: 'updates#all'
 end
