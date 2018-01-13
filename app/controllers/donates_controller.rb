@@ -5,10 +5,10 @@ class DonatesController < ApplicationController
 
   def new
     @donates =Donate.new
-
   end
+
   def edit
-       @donates = Donate.find(params[:id])
+    @donates = Donate.find(params[:id])
   end
 
   def update
@@ -26,9 +26,11 @@ class DonatesController < ApplicationController
     @Donate.destroy
     redirect_to root_path
   end
+
   def show
       @donates = Donate.find(params[:id])
   end
+  
   private
   def donate_params
     params.require(:donate).permit(:title, :product, :quantity, :option)
