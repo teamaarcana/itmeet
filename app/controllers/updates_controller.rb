@@ -6,15 +6,18 @@ class UpdatesController < ApplicationController
   def new
     @updates = Update.new
   end
+
   def edit
     @updates = Update.find(params[:id])
   end
+
   def create
     @update = Update.create(update_params)
     if @update.valid?
       redirect_to root_path
     end
   end
+
   def update
     @update = Update.find(params[:id])
     @update.update(update_params)
@@ -30,12 +33,15 @@ class UpdatesController < ApplicationController
     @Update.destroy
     redirect_to root_path
   end
+
   def show
     @update = Update.find(params[:id])
   end
+
   def all
     @updates = Update.all
   end
+  
   private
   def update_params
     params.permit(:title, :description,:photo)
